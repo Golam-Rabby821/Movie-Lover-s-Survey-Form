@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Lover's Survey</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+    <h1 id="title">Movie Lover's Survey</h1>
+    <p id="description">Please fill-up the form carefully.</p>
+    
+     <!-- Form Starts here-->
+    <form id="survey-form">
+
+      <!-- User input-->
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required/></label>
+
+        <label for="number" id="number-label">Age <input id="number" type="number" placeholder="Enter your age" min="16" max="45"/></label>
+
+      </fieldset>
+
+       <!-- Drop down menu-->
+      <fieldset>
+         <label for="dropdown">What is your favorite movie?
+           <select id="dropdown">
+           <option value="">Choose the Movie</option>
+           <option value="1">Casablanca</option>
+           <option value="2">The God Father</option>
+           <option value="3">Pulp Fiction</option>
+           <option value="4">Other</option>
+          </select>
+           </label>
+      </fieldset>
+
+      <!-- Radio Buttons input-->
+      <fieldset>
+         <legend> How often do you watch a movie? </legend>
+        <label for="sometimes">  <input id="sometimes" type="radio" class="radios" name="freq" value="sometimes"/> Sometimes</label>
+        <label for="weekly">  <input id="weekly" type="radio" class="radios" name="freq" value="weekly"/> Weekly</label>
+       <label for="hate-movies"> <input id="hate-movies" type="radio" class="radios" name="freq" value="Hate'em"/> Hate movies</label>
+      
+      </fieldset>
+
+      <!-- Checkboxes input-->
+      <fieldset>
+        <legend>Which movies have you watched thus far?</legend>
+
+        <label for="m1"><input id="m1" type="checkbox" value="Shawshank" class="radios"/>The Shawshank Redemption</label>
+        <label for="m2"><input id="m2" type="checkbox" value="Apu" class="radios"/>The Apu Trilogy</label>
+        <label for="m3"><input id="m3" type="checkbox" value="Samurai" class="radios"/>Seven Samurai</label>
+        <label for="m4"><input id="m4" type="checkbox" value="Idiots" class="radios"/>3 Idiots</label>
+        <label for="m4"><input id="m5" type="checkbox" value="Taxi" class="radios"/>The Taxi Driver</label>
+        <label for="m6"><input id="m6" type="checkbox" value="Psycho" class="radios"/>Psycho</label>
+        <label for="m7"><input id="m7" type="checkbox" value="Gump" class="radios"/>Forest Gump</label>
+        <label for="m8"><input id="m8" type="checkbox" value="Hater" class="radios"/>Don't watch movies!</label>
+        
+      </fieldset>
+      
+      <!-- Comment input-->
+      <fieldset>
+      <label for="movement"> Don't you think watching movies should be a full-time paid job?!
+        <textarea id="movement" name="movement" rows="5" cols="30" placeholder="I think it's high time we start raising our voice for this.."></textarea>
+        </label>
+      </fieldset>
+
+      <!-- Submit Button-->
+      <input id ="submit" type="submit" value="Submit"/>
+
+    </form>
+
+  </body>
+  <!-- Used footer to make the form have a margin from the bottom -->
+  <footer>
+
+  </footer>
+
+</html>
